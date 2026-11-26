@@ -1,0 +1,113 @@
+import type { RelicDefinition, WardrobeItem } from '../types';
+
+export const WARDROBE_ITEMS: WardrobeItem[] = [
+  {
+    id: 'hat-explorer',
+    name: 'Forest Explorer Hat',
+    slot: 'hat',
+    requiredStars: 3,
+    description: 'A feathered moss-green cap worn by Whisperwind trailblazers.',
+    icon: '🪶',
+  },
+  {
+    id: 'hat-starlight',
+    name: 'Starlight Beret',
+    slot: 'hat',
+    requiredStars: 9,
+    description: 'Woven with silver thread that shimmers like a midnight constellation.',
+    icon: '✨',
+  },
+  {
+    id: 'hat-cloudberry',
+    name: 'Cloudberry Circlet',
+    slot: 'hat',
+    requiredStars: 15,
+    description: 'A sunlit golden crown braided with sweet sky-berries.',
+    icon: '👑',
+  },
+  {
+    id: 'hat-archivist',
+    name: 'Wizard Scholar Hat',
+    slot: 'hat',
+    requiredStars: 24,
+    description: 'Awarded to master readers who unlock the deepest secrets of the realm.',
+    icon: '🧙‍♀️',
+  },
+  {
+    id: 'comp-bandana',
+    name: 'Crimson Scout Bandana',
+    slot: 'companion',
+    requiredStars: 6,
+    description: 'A jaunty adventure scarf for Doggy or Slothy.',
+    icon: '🧣',
+  },
+  {
+    id: 'comp-bowtie',
+    name: 'Golden Bow Tie',
+    slot: 'companion',
+    requiredStars: 12,
+    description: 'Extra dapper for royal cloud-castle tea parties.',
+    icon: '🎀',
+  },
+  {
+    id: 'comp-monocle',
+    name: 'Detective Spectacles',
+    slot: 'companion',
+    requiredStars: 18,
+    description: 'Helps companions spot the tiniest clues hidden in plain sight.',
+    icon: '🧐',
+  },
+  {
+    id: 'comp-crown',
+    name: 'Mini Star Crown',
+    slot: 'companion',
+    requiredStars: 27,
+    description: 'A tiny twinkling crown fit for the bravest reading sidekick.',
+    icon: '🌟',
+  },
+];
+
+export const RELICS: Record<string, RelicDefinition> = {
+  'relic-amber-lantern': {
+    id: 'relic-amber-lantern',
+    name: 'Everglow Oak Lantern',
+    questId: 'lantern-woods',
+    icon: '🏮',
+    description: 'Gifted by the Firefly Weaver after you restored the lantern chorus along the river.',
+  },
+  'relic-owl-compass': {
+    id: 'relic-owl-compass',
+    name: "Pip's Silver Compass",
+    questId: 'lantern-woods',
+    icon: '🧭',
+    description: 'Points toward anyone who needs help in the Whispering Woods.',
+  },
+  'relic-sky-key': {
+    id: 'relic-sky-key',
+    name: 'Clocktower Sun Key',
+    questId: 'cloudberry-castle',
+    icon: '🗝️',
+    description: 'Chimes softly like a bell whenever a hidden truth is uncovered.',
+  },
+  'relic-berry-brooch': {
+    id: 'relic-berry-brooch',
+    name: 'Golden Cloudberry Brooch',
+    questId: 'cloudberry-castle',
+    icon: '🫐',
+    description: 'Presented by Queen Aurelia for solving the mystery with kindness.',
+  },
+  'relic-star-prism': {
+    id: 'relic-star-prism',
+    name: 'Tidepool Star Prism',
+    questId: 'starlight-library',
+    icon: '🔮',
+    description: 'Casts tiny swirling constellations onto bedroom ceilings.',
+  },
+  'relic-pearl-quill': {
+    id: 'relic-pearl-quill',
+    name: 'Archivist Pearl Quill',
+    questId: 'starlight-library',
+    icon: '🪶',
+    description: 'Writes in shimmering sea-glass ink that never smudges.',
+  },
+};

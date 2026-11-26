@@ -1,0 +1,17 @@
+{
+  "name": "Whisperwind Chronicles",
+  "short_name": "Whisperwind",
+  "description": "Cozy Choose-Your-Own-Adventure fantasy reading quest for Mackenzie and Elizabeth.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f6efe2",
+  "theme_color": "#1e3a2f",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
