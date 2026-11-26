@@ -63,9 +63,19 @@ self.addEventListener('fetch', (event) => {
 
   if (event.request.mode === 'navigate') {
     event.respondWith(
-      caches.match(${JSON.stringify(`${BASE_PATH}index.html`)}).then((cached) =>
-        cached || fetch(event.request).catch(() => caches.match(${JSON.stringify(BASE_PATH)}))
-      )
+      fetch(event.request)
+        .then((response) => {
+          if (response && response.status === 200) {
+            const clone = response.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(${JSON.stringify(`${BASE_PATH}index.html`)}, clone));
+          }
+          return response;
+        })
+        .catch(() =>
+          caches.match(${JSON.stringify(`${BASE_PATH}index.html`)}).then((cached) =>
+            cached || caches.match(${JSON.stringify(BASE_PATH)})
+          )
+        )
     );
     return;
   }

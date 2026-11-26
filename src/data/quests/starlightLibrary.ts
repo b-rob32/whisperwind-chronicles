@@ -5,7 +5,7 @@ export const STARLIGHT_LIBRARY_QUEST: QuestDefinition = {
   title: 'The Sunken Starlight Library',
   subtitle: 'A fallen constellation is hiding inside the crystal tidepool library — decipher the clues before low tide!',
   artPath: './art/starlight-library.jpg',
-  mapPosition: { x: 80, y: 46 },
+  mapPosition: { x: 72, y: 50 },
   themeColor: '#1d4e89',
   estimatedMinutes: 10,
   totalChapters: 5,
