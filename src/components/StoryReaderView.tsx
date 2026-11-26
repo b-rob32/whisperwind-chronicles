@@ -310,7 +310,7 @@ export const StoryReaderView: React.FC<StoryReaderViewProps> = ({
             >
               <CompanionPortrait
                 companion="doggy"
-                gear={profiles.mackenzie.equippedCompanionGear}
+                gear={profiles.elizabeth.equippedCompanionGear}
                 size={38}
               />
               <div className="power-text">
@@ -333,7 +333,7 @@ export const StoryReaderView: React.FC<StoryReaderViewProps> = ({
             >
               <CompanionPortrait
                 companion="slothy"
-                gear={profiles.elizabeth.equippedCompanionGear}
+                gear={profiles.mackenzie.equippedCompanionGear}
                 size={38}
               />
               <div className="power-text">

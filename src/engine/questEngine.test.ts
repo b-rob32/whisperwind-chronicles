@@ -56,8 +56,8 @@ describe('Quest Engine Mechanics', () => {
   it('alternates activeReader between Mackenzie and Elizabeth in Co-op mode', () => {
     const quest = ALL_QUESTS[0];
     let session = createQuestSession(quest, 'coop', 'mackenzie', {
-      mackenzie: 'doggy',
-      elizabeth: 'slothy',
+      mackenzie: 'slothy',
+      elizabeth: 'doggy',
     });
     expect(session.activeReader).toBe('mackenzie');
 
@@ -72,8 +72,8 @@ describe('Quest Engine Mechanics', () => {
     const quest = ALL_QUESTS[0];
     const scene = quest.scenes[quest.startSceneId];
     let session = createQuestSession(quest, 'solo', 'elizabeth', {
-      mackenzie: 'doggy',
-      elizabeth: 'slothy',
+      mackenzie: 'slothy',
+      elizabeth: 'doggy',
     });
 
     const wrong = submitGateAnswer(session, scene, 2, 0);
@@ -91,8 +91,8 @@ describe('Quest Engine Mechanics', () => {
   it('activates Doggy clue highlight and Slothy option elimination powers', () => {
     const quest = ALL_QUESTS[0];
     let session = createQuestSession(quest, 'coop', 'mackenzie', {
-      mackenzie: 'doggy',
-      elizabeth: 'slothy',
+      mackenzie: 'slothy',
+      elizabeth: 'doggy',
     });
 
     session = useDoggyPower(session);

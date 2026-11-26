@@ -1,6 +1,6 @@
 import type { PlayerId, SaveState } from '../types';
 
-const STORAGE_KEY = 'whisperwind-chronicles-save-v1';
+const STORAGE_KEY = 'whisperwind-chronicles-save-v2';
 
 export function createDefaultSave(): SaveState {
   return {
@@ -9,10 +9,10 @@ export function createDefaultSave(): SaveState {
         id: 'mackenzie',
         name: 'Mackenzie',
         readingTier: 'grade3',
-        companion: 'doggy',
-        accentColor: '#c94a5a',
+        companion: 'slothy',
+        accentColor: '#1f7a6e',
         avatarHair: '#7a4b2a',
-        avatarTunic: '#c94a5a',
+        avatarTunic: '#1f7a6e',
         equippedHat: null,
         equippedCompanionGear: null,
         totalStars: 0,
@@ -26,10 +26,10 @@ export function createDefaultSave(): SaveState {
         id: 'elizabeth',
         name: 'Elizabeth',
         readingTier: 'grade5',
-        companion: 'slothy',
-        accentColor: '#1f7a6e',
+        companion: 'doggy',
+        accentColor: '#c94a5a',
         avatarHair: '#4a3121',
-        avatarTunic: '#1f7a6e',
+        avatarTunic: '#c94a5a',
         equippedHat: null,
         equippedCompanionGear: null,
         totalStars: 0,
